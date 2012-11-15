@@ -57,18 +57,11 @@
 	self = [super initWithFrame:frame];
 	if(self) {
         //set bar color
-        _tintColor = [[UIColor colorWithRed:51.0f/255.0f green:153.0f/255.0f blue:255.0f/255.0f alpha:1] retain];
+        _tintColor = [UIColor colorWithRed:51.0f/255.0f green:153.0f/255.0f blue:255.0f/255.0f alpha:1];
 		self.progress = 0;
 	}
     
 	return self;
 }
-
-- (void)dealloc {
-    [_tintColor release];
-    [_animationTimer release];    
-	[super dealloc];
-}
-
 
 @end
